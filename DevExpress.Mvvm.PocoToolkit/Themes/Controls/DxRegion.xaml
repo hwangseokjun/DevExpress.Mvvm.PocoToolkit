@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:dxmvvm="clr-namespace:DevExpress.Mvvm.UI.ModuleInjection;assembly=DevExpress.Mvvm.UI"
+                    xmlns:ctrls="clr-namespace:DevExpress.Mvvm.PocoToolkit.Controls">
+    <Style TargetType="{x:Type ctrls:DxRegion}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ctrls:DxRegion}">
+                    <ContentControl dxmvvm:UIRegion.Region="{TemplateBinding RegionName}"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:pocos="clr-namespace:DevExpress.Mvvm.PocoToolkit.Controls;assembly=DevExpress.Mvvm.PocoToolkit"
+                    xmlns:views="clr-namespace:DevExpress.Mvvm.PocoToolkit.Demo.Common.UI.Views">
+    <Style TargetType="{x:Type views:CustomWindow}"
+           BasedOn="{StaticResource {x:Type Window}}">
+        <Setter Property="Content">
+            <Setter.Value>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="48"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <pocos:DxRegion Grid.Row="1" RegionName="MainRegion"/>
+                </Grid>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
